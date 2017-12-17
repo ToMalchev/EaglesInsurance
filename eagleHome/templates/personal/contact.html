@@ -1,0 +1,14 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+	
+<div class="text1">
+	
+	{{ contact1.contact_text|safe }}
+	<br/>
+	<p>email: {{ contact1.contact_phone }}</p>
+	<p>tel: {{ contact1.contact_email }}</p>
+
+</div>
+
+{% endblock %}

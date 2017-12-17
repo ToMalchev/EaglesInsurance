@@ -1,0 +1,12 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+
+<div class="text1">
+	<h4>{{ ins_type.titleInsurance }}</h4>
+	<br/>
+	<br/>
+	{{ ins_type.descriptionInsurance|safe|escape }}
+</div>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "personal/header.html" %}
+
+{% load embed_video_tags %}
+
+{% block content %}
+
+
+<br>
+
+{% for i in item %}
+
+ <div class="row"'>
+	<br>
+	<div class="col-sm-7" style="border-bottom: solid 3px #4dafff; border-top: solid 3px #4dafff; padding: 15px; margin: 20px;">
+		{{ i.title }}
+		<br>
+		<br>
+		<br>
+		{{ i.text }}
+		<br>
+		<br>
+		{% video i.video as my_video %}
+		<div style="text-align: center;">
+		{% video my_video '480x340' %}
+		</div>
+	</div>
+</div>
+{% endvideo %}
+{% endfor %}
+<!-- {% include "personal/includes/htmlsnippet.html" %} -->
+{% endblock %}

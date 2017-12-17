@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EAGLES GROUP COMPANY</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	
+
+	<style type="text/css">
+		html,
+		body {
+		  height:95%;
+		  width:100%;
+		}
+		.menu_text {
+			color: black;
+	}
+		.text1{
+			color: white;
+		}
+	</style>
+</head>
+
+<body class="body" background="{% static 'personal/img/download1(1).jpg' %}">
+	<div class="container-fluid" style="min-height:95%;">
+		<div class="row">
+			  <div class="col-sm-4">
+				  <br>  
+				  <br>
+				  <br>
+				  <center>
+					<img src="{% static 'personal/img/New Logo White.jpg' %}" class="responsive-img" style='max-height:130px;' alt="face">
+				  </center>
+			  </div>
+				  <br/>
+				  <br/>
+				  <br/>
+				  <br/>
+                  <br/>
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+			<div class="col-sm-4 well bs-sidebar" id="sidebar" style="background-color: #b1dff2;">
+			  <ul class="nav nav-pills">
+				<li><a href='/'><span style="font-size: 1.1em; color: black;"><b>Начало</b></span></a></li>
+				<li><a href='/insurance/'><span class="hoverOver" style="font-size: 1.1em; color: black;"><b>Застраховки</b></span></a></li>
+				<li><a href='/forUs/'><span style="font-size: 1.1em; color: black;"><b>За Нас</b></span></a></li>
+				<li><a href='/contact/'><span style="font-size: 1.1em; color: black;"><b>Контакти</b></span></a></li>
+				<li><a href='/helpful/'><span style="font-size: 1.1em; color: black;"><b>Полезно</b></span></a></li>
+			  </ul>
+			</div> <!--well bs-sidebar affix-->
+		  </div> <!--col-sm-2-->
+			  
+		<hr/>
+
+		<div class="row">
+
+		  <div class="col-sm-10">
+		  
+			<div class='container-fluid'>
+			<br><br>
+			   {% block content %}
+			   {% endblock %}
+
+			   <br/>
+			   <br/>
+			  
+			</div>
+		  </div>
+		</div> 
+	</div>
+	<br/>
+<br/>
+<br/>
+
+	<footer>
+		<div class="container-fluid" style='margin-left:15px; font-size: 1.8em; color: black'>
+			<p> | <a href="https://www.facebook.com/Eagles-Group-Company-1117893991631043/?fref=ts" target="https://www.facebook.com/Eagles-Group-Company-1117893991631043/?fref=ts">Facebook</a> |</p>
+		</div>
+	</footer>	
+	
+</body>
+
+</html>

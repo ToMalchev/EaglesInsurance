@@ -1,0 +1,11 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+
+{% for property in object_list %}
+	<h5 style="color: white">{{ property.date_property|date:"Y-m-d" }}:  {{ property.title_property_Insurance }} </h5>
+	<br/>
+	<div style="color: white;">{{ property.description_property_Insurance }}</div>
+{% endfor %}
+
+{% endblock %}
